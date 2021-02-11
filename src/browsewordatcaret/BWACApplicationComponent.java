@@ -31,7 +31,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.HashMap;
 import java.util.Map;
 
-@State(name = "BWACSettings", storages = {@Storage(id = "other", file = "$APP_CONFIG$/options.xml")})
+@State(name = "BWACSettings", storages = {@Storage("browse-word-at-caret.xml")})
 public class BWACApplicationComponent implements ApplicationComponent, EditorFactoryListener, PersistentStateComponent<BWACApplicationComponent.BWACSettings> {
     private Map<Editor, BWACEditorComponent> editorComponents;
     private BWACSettings settings = new BWACSettings();

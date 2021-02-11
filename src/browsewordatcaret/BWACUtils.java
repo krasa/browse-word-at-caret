@@ -54,24 +54,24 @@ public final class BWACUtils {
         if (length <= 0 || begin < 0 || begin >= length || length <= 0 || end <= 0 || end > length) {
             return false;
         }
-        // previous char
-        if (begin != 0 && Character.isJavaIdentifierPart(text.charAt(begin - 1))) {
-            if (!checkHumpBound || !EditorActionUtil.isHumpBound(text, begin, true)) {
-                return false;
-            }
-        }
-        // next char
-        if (end != length && Character.isJavaIdentifierPart(text.charAt(end))) {
-            if (!checkHumpBound || !EditorActionUtil.isHumpBound(text, end, false)) {
-                return false;
-            }
-        }
-        // first/last char from text
-        if (!checkOnlyPreviousNext) {
-            if (!Character.isJavaIdentifierPart(text.charAt(begin)) || !Character.isJavaIdentifierPart(text.charAt(end - 1))) {
-                return false;
-            }
-        }
+//        // previous char
+//        if (begin != 0 && Character.isJavaIdentifierPart(text.charAt(begin - 1))) {
+//            if (!checkHumpBound || !EditorActionUtil.isHumpBound(text, begin, true)) {
+//                return false;
+//            }
+//        }
+//        // next char
+//        if (end != length && Character.isJavaIdentifierPart(text.charAt(end))) {
+//            if (!checkHumpBound || !EditorActionUtil.isHumpBound(text, end, false)) {
+//                return false;
+//            }
+//        }
+//        // first/last char from text
+//        if (!checkOnlyPreviousNext) {
+//            if (!Character.isJavaIdentifierPart(text.charAt(begin)) || !Character.isJavaIdentifierPart(text.charAt(end - 1))) {
+//                return false;
+//            }
+//        }
         return true;
     }
 }
