@@ -2,7 +2,7 @@
 <idea-plugin version="2">
     <id>BrowseWordAtCaret</id>
     <name>BrowseWordAtCaret</name>
-    <version>3.0.4-custom</version>
+    <version>3.0.5-custom</version>
 <!--    <version>3.0-SNAPSHOT</version>-->
     <description><![CDATA[
       Allows to easily browse next/previous word at caret and highlight other appearances of selected word.<br>
